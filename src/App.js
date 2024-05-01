@@ -1,7 +1,7 @@
 import React from "react";
-import Data from "./components/Data";
+import Parent from "./components/Parent";
 function App() {
-  const Data =     [
+  const data =     [
 { "id": 1, "name": "Pasta - Agnolotti - Butternut", "price": 23, "image": "[http://dummyimage.com/242x100.png/cc0000/ffffff](http://dummyimage.com/242x100.png/cc0000/ffffff)", "quantity": 44 },
     { "id": 2, "name": "Dc - Sakura Fu", "price": 32, "image": "[http://dummyimage.com/231x100.png/cc0000/ffffff](http://dummyimage.com/231x100.png/cc0000/ffffff)", "quantity": 42 },
     { "id": 3, "name": "Paste - Black Olive", "price": 74, "image": "[http://dummyimage.com/130x100.png/ff4444/ffffff](http://dummyimage.com/130x100.png/ff4444/ffffff)", "quantity": 41 },
@@ -19,7 +19,7 @@ function App() {
     { "id": 15, "name": "Cafe Royale", "price": 43, "image": "[http://dummyimage.com/170x100.png/5fa2dd/ffffff](http://dummyimage.com/170x100.png/5fa2dd/ffffff)", "quantity": 30 }]
     return (
       <div className="App">
-        <Data />
+        <Parent props= {data} />
     
       </div>
     );
